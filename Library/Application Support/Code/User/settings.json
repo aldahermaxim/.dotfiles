@@ -1,0 +1,31 @@
+{
+  "editor.fontFamily": "'CaskaydiaCove Nerd Font', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.browser.showInTitleBar": false,
+  "workbench.navigationControl.enabled": false,
+  "workbench.layoutControl.enabled": false,
+
+  "terminal.integrated.initialHint": false,
+  "chat.disableAIFeatures": true,
+  "editor.minimap.showSlider": "always",
+
+  //======================Formatters======================//
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  }
+  //======================Formatters======================//
+}
