@@ -26,20 +26,19 @@ cd ~/.dotfiles && stow --target=$HOME .
 
 | Tool | Purpose |
 |------|---------|
-| **zsh** | Shell — history, completions, emacs keybindings, aliases |
-| **Starship** | Prompt — Tokyo Night colors, git/lang/docker/time segments |
-| **Ghostty** | Terminal emulator — CaskaydiaCove Nerd Font, Tokyo Night |
-| **VSCode** | Editor — Tokyo Night, Prettier, ligatures |
-| **Zed** | Editor — Tokyo Night (Linux) / One Dark·Light (macOS) |
-| **Mise** | Runtime manager — Node LTS, pnpm |
-| **Git** | Identity and default branch config |
+| **zsh** | Shell |
+| **Starship** | Prompt |
+| **Ghostty** | Terminal emulator |
+| **VSCode** | Editor |
+| **Zed** | Editor |
+| **Mise** | Runtime manager |
 
 ### Linux (Arch / Fedora + Wayland)
 
 | Tool | Purpose |
 |------|---------|
-| **Niri** | Wayland compositor — tiling, dual monitor (4K + QHD), Swedish keyboard |
-| **Waybar** | Top panel — workspaces, clock, audio, BT, network, battery |
+| **Niri** | Wayland compositor - tiling WM |
+| **Waybar** | Top panel |
 | **Fuzzel** | Application launcher |
 | **Mako** | Notification daemon |
 | **Swaylock** | Lock screen |
