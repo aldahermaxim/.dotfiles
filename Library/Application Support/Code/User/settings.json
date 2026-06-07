@@ -26,5 +26,8 @@
   },
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff"
   }
 }
