@@ -1,6 +1,3 @@
-# PATH
-export PATH="$HOME/.local/bin:$PATH"
-
 #### --- HISTORY --- ####
 HISTFILE=~/.zsh_history
 HISTSIZE=5000
@@ -27,10 +24,19 @@ alias ls='ls -G'
 alias ll='ls -alF'
 alias l='ls -CF'
 alias grep='grep --color=auto'
-alias ..='cd ..'
-alias ...='cd ../..'
+
+#### --- PATH --- ####
+export PATH="$HOME/.local/bin:$PATH"
+
 
 #### --- TOOLS --- ####
+
+# android
+export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/emulator:$PATH"
+
 # mise
 eval "$(~/.local/bin/mise activate zsh)"
 
