@@ -1,0 +1,29 @@
+{
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "window.menuBarVisibility": "toggle",
+
+  "workbench.navigationControl.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredLightColorTheme": "Tokyo Night",
+  "workbench.preferredDarkColorTheme": "Tokyo Night",
+  "workbench.startupEditor": "none",
+
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.minimap.renderCharacters": false,
+  "editor.fontFamily": "Cascadia Code NF",
+  "editor.minimap.showSlider": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+  "terminal.integrated.initialHint": false,
+  "chat.disableAIFeatures": true,
+}

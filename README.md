@@ -1,17 +1,25 @@
-# Dotfiles
+# My Arch Linux Dotfiles
 
-This repo contains my personal configuration files for a minimal and productive Unix-based operating system setup.
+## Symlinking
 
-## Contents
+```bash
+cd .dotfiles
+stow --target=$HOME .
+```
 
-- **ghostty** - Ghostty terminal emulator config
-- **starship** - Starship prompt configuration
-- **zsh** - Zsh shell configuration
+## Switching shells
 
-This repository uses [GNU Stow](https://www.gnu.org/software/stow/) to manage symlinks.
+Switch to zsh:
+```bash
+chsh -s /usr/bin/zsh
+```
 
-## Usage
+Switch back to bash:
+```bash
+chsh -s /usr/bin/bash
+```
 
-```zsh
-cd ~/.dotfiles && stow .
+Check current shell:
+```bash
+echo $SHELL
 ```

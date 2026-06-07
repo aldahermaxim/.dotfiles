@@ -1,0 +1,30 @@
+sort=-time
+layer=overlay
+anchor=top-right
+margin=10
+padding=12,16
+border-size=1
+border-radius=8
+width=360
+height=100
+max-visible=5
+default-timeout=5000
+ignore-timeout=0
+
+font=CaskaydiaCove NF 11
+background-color=#1a1b26
+text-color=#c0caf5
+border-color=#565f89
+progress-color=over #364a82
+
+[urgency=low]
+border-color=#414868
+default-timeout=3000
+
+[urgency=normal]
+border-color=#7aa2f7
+
+[urgency=critical]
+border-color=#f7768e
+text-color=#f7768e
+default-timeout=0
