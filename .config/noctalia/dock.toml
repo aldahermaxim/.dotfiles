@@ -1,0 +1,10 @@
+[dock]
+enabled = false
+background_opacity = 1.0
+cross_axis_padding = 10
+icon_size = 32
+item_spacing = 10
+magnification_scale = 1.25
+main_axis_padding = 10
+margin_edge = 10
+radius = 0

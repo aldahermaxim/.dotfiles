@@ -1,0 +1,45 @@
+[widget.control-center]
+glyph = "niri"
+
+[widget.clock]
+interactive = false
+format = "{:%d/%m %Y  %H:%M}"
+
+[widget.workspaces]
+interactive = false
+show_labels = false
+
+[widget.weather]
+interactive = false
+show_condition = false
+
+[widget.battery]
+interactive = false
+
+[widget.bluetooth]
+interactive = false
+
+[widget.cpu]
+interactive = false
+
+[widget.media]
+hide_when_no_media = true
+interactive = false
+
+[widget.network]
+interactive = false
+show_label = false
+
+[widget.ram]
+interactive = false
+
+[widget.temp]
+interactive = false
+
+[widget.volume]
+interactive = false
+show_label = false
+
+[widget.input_volume]
+interactive = false
+show_label = false

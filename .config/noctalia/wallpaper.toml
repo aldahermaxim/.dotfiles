@@ -1,0 +1,5 @@
+[wallpaper]
+directory = "~/Pictures/Wallpapers"
+
+[wallpaper.default]
+path = "~/Pictures/Wallpapers/zen-boat.webp"

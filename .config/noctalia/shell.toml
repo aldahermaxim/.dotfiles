@@ -1,0 +1,28 @@
+[shell]
+font_family = "JetBrainsMono Nerd Font Mono"
+niri_overview_type_to_launch_enabled = true
+clipboard_confirm_clear_history = false
+corner_radius_scale = 0.0
+
+[shell.launcher]
+categories = false
+compact = true
+fetch_exchange_rates = false
+
+[shell.launcher.providers.calculator]
+global = false
+
+[shell.session]
+show_shortcuts = false
+
+[shell.panel]
+floating_offset = 10
+floating_layer = "top"
+session_position = "center"
+session_placement = "floating"
+control_center_placement = "floating"
+wallpaper_placement = "floating"
+wallpaper_position = "center"
+control_center_position = "top_right"
+transparency_mode = "solid"
+open_near_click_control_center = true

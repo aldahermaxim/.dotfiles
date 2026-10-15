@@ -1,0 +1,99 @@
+[bootstrap.dnf.repos]
+mise = { copr = "jdxcode/mise" }
+
+[bootstrap.packages]
+# System
+"dnf:kernel-tools" = "latest"
+"dnf:polkit" = "latest"
+
+# Network
+"dnf:iwlwifi-mvm-firmware" = "latest"
+"dnf:NetworkManager" = "latest"
+"dnf:NetworkManager-wifi" = "latest"
+
+# Graphics
+"dnf:libva-intel-media-driver" = "latest"
+"dnf:mesa-dri-drivers" = "latest"
+"dnf:mesa-libEGL" = "latest"
+"dnf:mesa-vulkan-drivers" = "latest"
+
+# Audio
+"dnf:alsa-sof-firmware" = "latest"
+"dnf:alsa-ucm" = "latest"
+"dnf:intel-audio-firmware" = "latest"
+"dnf:pipewire" = "latest"
+"dnf:pipewire-alsa" = "latest"
+"dnf:pipewire-pulseaudio" = "latest"
+"dnf:wireplumber" = "latest"
+
+# Power
+"dnf:tuned-ppd" = "latest"
+"dnf:upower" = "latest"
+
+# Session
+"dnf:gnome-keyring" = "latest"
+"dnf:gnome-keyring-pam" = "latest"
+"dnf:xdg-desktop-portal" = "latest"
+"dnf:xdg-desktop-portal-gnome" = "latest"
+"dnf:xdg-desktop-portal-gtk" = "latest"
+"dnf:xdg-user-dirs" = "latest"
+
+# Fonts
+"dnf:google-noto-color-emoji-fonts" = "latest"
+"dnf:jetbrainsmono-nerd-fonts" = "latest"
+"dnf:twitter-twemoji-fonts" = "latest"
+
+# Desktop
+"dnf:adw-gtk3-theme" = "latest"
+"dnf:niri" = "latest"
+"dnf:noctalia" = "latest"
+"dnf:xwayland-satellite" = "latest"
+
+# CLI
+"dnf:eza" = "latest"
+"dnf:fd-find" = "latest"
+"dnf:gcc" = "latest"
+"dnf:git" = "latest"
+"dnf:mise" = "latest"
+"dnf:neovim" = "latest"
+"dnf:ripgrep" = "latest"
+"dnf:starship" = "latest"
+"dnf:stow" = "latest"
+"dnf:tree-sitter-cli" = "latest"
+"dnf:wl-clipboard" = "latest"
+"dnf:zsh" = "latest"
+
+# Apps
+"dnf:chromium" = "latest"
+"dnf:foot" = "latest"
+"dnf:loupe" = "latest"
+"dnf:nautilus" = "latest"
+"dnf:papers" = "latest"
+"dnf:zed" = "latest"
+
+[tools]
+node = "lts"
+java = "lts"
+pnpm = "latest"
+
+[bootstrap.hooks]
+pre-packages = [
+  "mise run dnf:disable-weak-deps",
+  "mise run dnf:show-terra || mise run dnf:enable-terra",
+]
+post-packages = "mise run xdg:create-user-dirs"
+
+[tasks."dnf:disable-weak-deps"]
+run = "sudo dnf config-manager setopt install_weak_deps=False"
+
+[tasks."dnf:enable-terra"]
+run = "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
+
+[tasks."dnf:show-terra"]
+run = "rpm -q terra-release terra-gpg-keys"
+
+[tasks."dnf:show-weak-deps"]
+run = "dnf --dump-main-config | grep install_weak_deps"
+
+[tasks."xdg:create-user-dirs"]
+run = "xdg-user-dirs-update"

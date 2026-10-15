@@ -1,0 +1,21 @@
+[bar.carbon]
+position = "top"
+capsule = true
+capsule_radius = 0
+hover_highlight = false
+margin_edge = 10
+margin_ends = 10
+padding = 4
+radius = 0
+start = ["workspaces", "media"]
+center = ["clock", "weather", "cpu", "ram", "temp"]
+end = [
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "input_volume",
+    "battery",
+]

@@ -1,0 +1,6 @@
+[osd]
+offset_x = 30
+offset_y = 10
+orientation = "vertical"
+position_vertical = "center_right"
+background_opacity = 1

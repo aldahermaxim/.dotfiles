@@ -1,0 +1,9 @@
+[theme]
+mode = "dark"
+source = "custom"
+custom_palette = "zen-boat"
+pure_black_dark = false
+
+[theme.templates]
+builtin_ids = [ "gtk3", "gtk4", "foot", "niri", "ghostty", "starship" ]
+community_ids = []
