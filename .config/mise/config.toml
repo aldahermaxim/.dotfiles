@@ -47,6 +47,7 @@ mise = { copr = "jdxcode/mise" }
 "dnf:adw-gtk3-theme" = "latest"
 "dnf:niri" = "latest"
 "dnf:noctalia" = "latest"
+"dnf:noctalia-greeter" = "latest"
 "dnf:xwayland-satellite" = "latest"
 
 # CLI

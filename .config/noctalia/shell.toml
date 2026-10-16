@@ -4,6 +4,9 @@ niri_overview_type_to_launch_enabled = true
 clipboard_confirm_clear_history = false
 corner_radius_scale = 0.0
 
+[shell.greeter_sync]
+auto_sync = true
+
 [shell.launcher]
 categories = false
 compact = true

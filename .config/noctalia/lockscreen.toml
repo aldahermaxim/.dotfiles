@@ -6,13 +6,13 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     [lockscreen_widgets.grid]
     cell_size = 16
     major_interval = 4
-    visible = false
+    visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 70.0
-    box_width = 400.0
-    cx = 984.5
-    cy = 984.5
+    box_width = 528.0
+    cx = 0.0
+    cy = 0.0
     output = "eDP-1"
     placement_height = 1108.0
     placement_width = 1969.0
@@ -23,7 +23,7 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         background_color = "surface_variant"
         background_opacity = 1.0
         background_radius = 0.0
-        center_password_text = true
+        center_password_text = false
         input_opacity = 1.0
         input_radius = 0.0
         layout = "compact"

@@ -2,6 +2,9 @@
 # Basic Settings
 # ---------------------------------------------------------------------------
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=20000
 SAVEHIST=10000
