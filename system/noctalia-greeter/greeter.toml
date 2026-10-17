@@ -1,0 +1,28 @@
+[session]
+default = "niri"
+
+[user]
+default = "maxim"
+
+[appearance]
+scheme = "Synced"
+hide_logo = true
+power_buttons_position = "bottom-right"
+scheme_selector_position = "hidden"
+password_style = "default"
+
+[clock]
+position = "above-panel"
+time_format = "{:%H:%M}"
+date_format = "%A, %x"
+
+[keyboard]
+layout = "se"
+numlock = true
+
+[cursor]
+theme = "Adwaita"
+size = 24
+
+[idle]
+timeout = 120

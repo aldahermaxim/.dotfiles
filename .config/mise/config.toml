@@ -44,7 +44,9 @@ mise = { copr = "jdxcode/mise" }
 "dnf:twitter-twemoji-fonts" = "latest"
 
 # Desktop
+"dnf:accountsservice" = "latest"
 "dnf:adw-gtk3-theme" = "latest"
+"dnf:greetd" = "latest"
 "dnf:niri" = "latest"
 "dnf:noctalia" = "latest"
 "dnf:noctalia-greeter" = "latest"
@@ -71,6 +73,28 @@ mise = { copr = "jdxcode/mise" }
 "dnf:nautilus" = "latest"
 "dnf:papers" = "latest"
 "dnf:zed" = "latest"
+
+[bootstrap.files."/etc/greetd/config.toml"]
+source = "~/.dotfiles/system/greetd/config.toml"
+owner = "root"
+group = "root"
+mode = "0644"
+
+[bootstrap.services.greetd]
+state = "running"
+enabled = true
+on_change = "none"
+
+[bootstrap.directories."/var/lib/noctalia-greeter"]
+owner = "greetd"
+group = "greetd"
+mode = "0750"
+
+[bootstrap.files."/var/lib/noctalia-greeter/greeter.toml"]
+source = "~/.dotfiles/system/noctalia-greeter/greeter.toml"
+owner = "greetd"
+group = "greetd"
+mode = "0640"
 
 [tools]
 node = "lts"
