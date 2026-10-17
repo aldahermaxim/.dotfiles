@@ -1,0 +1,71 @@
+[bootstrap.packages]
+# System
+"dnf:kernel-tools" = "latest"
+"dnf:polkit" = "latest"
+
+# Network
+"dnf:iwlwifi-mvm-firmware" = "latest"
+"dnf:NetworkManager" = "latest"
+"dnf:NetworkManager-wifi" = "latest"
+
+# Graphics
+"dnf:libva-intel-media-driver" = "latest"
+"dnf:mesa-dri-drivers" = "latest"
+"dnf:mesa-libEGL" = "latest"
+"dnf:mesa-vulkan-drivers" = "latest"
+
+# Audio
+"dnf:alsa-sof-firmware" = "latest"
+"dnf:alsa-ucm" = "latest"
+"dnf:intel-audio-firmware" = "latest"
+"dnf:pipewire" = "latest"
+"dnf:pipewire-alsa" = "latest"
+"dnf:pipewire-pulseaudio" = "latest"
+"dnf:wireplumber" = "latest"
+
+# Power
+"dnf:tuned-ppd" = "latest"
+"dnf:upower" = "latest"
+
+# Session
+"dnf:gnome-keyring" = "latest"
+"dnf:gnome-keyring-pam" = "latest"
+"dnf:xdg-desktop-portal" = "latest"
+"dnf:xdg-desktop-portal-gnome" = "latest"
+"dnf:xdg-desktop-portal-gtk" = "latest"
+"dnf:xdg-user-dirs" = "latest"
+
+# Fonts
+"dnf:google-noto-color-emoji-fonts" = "latest"
+"dnf:jetbrainsmono-nerd-fonts" = "latest"
+"dnf:twitter-twemoji-fonts" = "latest"
+
+# Desktop
+"dnf:accountsservice" = "latest"
+"dnf:adw-gtk3-theme" = "latest"
+"dnf:greetd" = "latest"
+"dnf:niri" = "latest"
+"dnf:noctalia" = "latest"
+"dnf:noctalia-greeter" = "latest"
+"dnf:xwayland-satellite" = "latest"
+
+# CLI
+"dnf:eza" = "latest"
+"dnf:fd-find" = "latest"
+"dnf:gcc" = "latest"
+"dnf:git" = "latest"
+"dnf:mise" = "latest"
+"dnf:neovim" = "latest"
+"dnf:ripgrep" = "latest"
+"dnf:starship" = "latest"
+"dnf:tree-sitter-cli" = "latest"
+"dnf:wl-clipboard" = "latest"
+"dnf:zsh" = "latest"
+
+# Apps
+"dnf:chromium" = "latest"
+"dnf:foot" = "latest"
+"dnf:loupe" = "latest"
+"dnf:nautilus" = "latest"
+"dnf:papers" = "latest"
+"dnf:zed" = "latest"

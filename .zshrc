@@ -2,9 +2,6 @@
 # Basic Settings
 # ---------------------------------------------------------------------------
 
-export EDITOR=nvim
-export VISUAL=nvim
-
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=20000
 SAVEHIST=10000
@@ -70,36 +67,10 @@ alias pixelX='emulator -avd pixelX -memory 4096 -no-window -gpu host -no-snapsho
 
 
 # ---------------------------------------------------------------------------
-# Path
-# ---------------------------------------------------------------------------
-
-typeset -U path PATH
-
-path=(
-  "$HOME/.local/bin"
-  $path
-)
-
-
-# ---------------------------------------------------------------------------
 # Mise
 # ---------------------------------------------------------------------------
 
 eval "$(mise activate zsh)"
-
-
-# ---------------------------------------------------------------------------
-# Android
-# ---------------------------------------------------------------------------
-
-export ANDROID_HOME="$HOME/.local/share/android/sdk"
-
-path=(
-  "$ANDROID_HOME/cmdline-tools/latest/bin"
-  "$ANDROID_HOME/platform-tools"
-  "$ANDROID_HOME/emulator"
-  $path
-)
 
 
 # ---------------------------------------------------------------------------

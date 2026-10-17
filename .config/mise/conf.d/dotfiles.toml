@@ -1,0 +1,12 @@
+[dotfiles]
+"~/.gitconfig" = {}
+"~/.zprofile" = {}
+"~/.zshrc" = {}
+"~/.config/foot" = {}
+"~/.config/ghostty" = {}
+"~/.config/mise" = {}
+"~/.config/niri" = {}
+"~/.config/noctalia" = {}
+"~/.config/nvim" = {}
+"~/.config/starship.toml" = {}
+"~/.config/zed" = {}

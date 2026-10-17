@@ -1,0 +1,21 @@
+[bootstrap.files."/etc/greetd/config.toml"]
+source = "~/.dotfiles/system/greetd/config.toml"
+owner = "root"
+group = "root"
+mode = "0644"
+
+[bootstrap.services.greetd]
+state = "running"
+enabled = true
+on_change = "none"
+
+[bootstrap.directories."/var/lib/noctalia-greeter"]
+owner = "greetd"
+group = "greetd"
+mode = "0750"
+
+[bootstrap.files."/var/lib/noctalia-greeter/greeter.toml"]
+source = "~/.dotfiles/system/noctalia-greeter/greeter.toml"
+owner = "greetd"
+group = "greetd"
+mode = "0640"

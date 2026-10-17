@@ -1,0 +1,21 @@
+[bootstrap.hooks]
+pre-packages = [
+  "mise run dnf:disable-weak-deps",
+  "mise run dnf:show-terra || mise run dnf:enable-terra",
+]
+post-packages = "mise run xdg:create-user-dirs"
+
+[tasks."dnf:disable-weak-deps"]
+run = "sudo dnf config-manager setopt install_weak_deps=False"
+
+[tasks."dnf:enable-terra"]
+run = "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
+
+[tasks."dnf:show-terra"]
+run = "rpm -q terra-release terra-gpg-keys"
+
+[tasks."dnf:show-weak-deps"]
+run = "dnf --dump-main-config | grep install_weak_deps"
+
+[tasks."xdg:create-user-dirs"]
+run = "xdg-user-dirs-update"
