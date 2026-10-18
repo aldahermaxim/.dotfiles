@@ -10,7 +10,7 @@ Personal minimal Fedora setup with niri, Noctalia and greetd, managed with [mise
 sudo dnf copr enable jdxcode/mise
 sudo dnf install mise git
 
-git clone https://github.com/aldahermaxim/.dotfiles.git ~/.dotfiles
+git clone git@github.com:aldahermaxim/.dotfiles.git ~/.dotfiles
 MISE_CONFIG_DIR=~/.dotfiles/.config/mise mise bootstrap --skip services
 ```
 
