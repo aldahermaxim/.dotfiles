@@ -1,0 +1,41 @@
+{
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "native",
+  "window.menuBarVisibility": "toggle",
+  "window.customTitleBarVisibility": "never",
+
+  "workbench.navigationControl.enabled": false,
+  "workbench.browser.showInTitleBar": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.location": "top",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredLightColorTheme": "Pitch Black",
+  "workbench.preferredDarkColorTheme": "Pitch Black",
+  "workbench.startupEditor": "none",
+
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.minimap.renderCharacters": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.minimap.showSlider": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+
+  "chat.disableAIFeatures": true,
+  "claudeCode.hideOnboarding": true,
+  "svelte.enable-ts-plugin": true,
+
+
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  }
+}

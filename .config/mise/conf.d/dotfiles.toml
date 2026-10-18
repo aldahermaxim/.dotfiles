@@ -1,4 +1,5 @@
 [dotfiles]
+"~/.config/Code/User/settings.json" = { source = "~/.dotfiles/.config/code/config.json" }
 "~/.config/foot" = {}
 "~/.config/ghostty" = {}
 "~/.config/mise" = {}
