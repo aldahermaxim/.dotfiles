@@ -1,3 +1,13 @@
+[bootstrap.groups.greetd]
+system = true
+
+[bootstrap.users.greetd]
+system = true
+group = "greetd"
+home = "/var/lib/greetd"
+shell = "/usr/sbin/nologin"
+comment = "greetd daemon"
+
 [bootstrap.files."/etc/greetd/config.toml"]
 source = "~/.dotfiles/system/greetd/config.toml"
 owner = "root"
@@ -8,6 +18,9 @@ mode = "0644"
 state = "running"
 enabled = true
 on_change = "none"
+
+[bootstrap.files."/etc/systemd/system/default.target"]
+state = "absent"
 
 [bootstrap.directories."/var/lib/noctalia-greeter"]
 owner = "greetd"

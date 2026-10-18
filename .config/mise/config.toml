@@ -1,5 +1,10 @@
+min_version = "2026.10.13"
+
 [settings]
 history.enabled = false
 write_targets.dotfiles = "~/.config/mise/conf.d/dotfiles.toml"
 write_targets.packages = "~/.config/mise/conf.d/packages.toml"
 write_targets.tools = "~/.config/mise/conf.d/tools.toml"
+
+[bootstrap.user]
+login_shell = "/usr/bin/zsh"

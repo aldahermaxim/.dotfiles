@@ -1,5 +1,6 @@
 [bootstrap.packages]
 # System
+"dnf:dnf5-plugins" = "latest"
 "dnf:kernel-tools" = "latest"
 "dnf:polkit" = "latest"
 

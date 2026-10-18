@@ -1,0 +1,18 @@
+[bootstrap.files."/etc/dnf/dnf.conf"]
+phase = "pre-packages"
+owner = "root"
+group = "root"
+mode = "0644"
+content = """
+[main]
+install_weak_deps=False
+"""
+
+[bootstrap.hooks]
+pre-packages = "mise run --skip-tools dnf:enable-terra"
+post-packages = "xdg-user-dirs-update"
+
+[tasks."dnf:enable-terra"]
+description = "Install the Terra repository configuration and signing keys"
+skip_if = "rpm -q terra-release terra-gpg-keys"
+run = "sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release terra-gpg-keys"
