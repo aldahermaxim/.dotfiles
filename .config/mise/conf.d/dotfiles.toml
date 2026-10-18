@@ -1,7 +1,4 @@
 [dotfiles]
-"~/.gitconfig" = {}
-"~/.zprofile" = {}
-"~/.zshrc" = {}
 "~/.config/foot" = {}
 "~/.config/ghostty" = {}
 "~/.config/mise" = {}
@@ -10,3 +7,7 @@
 "~/.config/nvim" = {}
 "~/.config/starship.toml" = {}
 "~/.config/zed" = {}
+"~/.gitconfig" = {}
+"~/.zprofile" = {}
+"~/.zshrc" = {}
+"~/Pictures/Wallpapers" = { source = "~/.dotfiles/wallpapers", mode = "copy" }
