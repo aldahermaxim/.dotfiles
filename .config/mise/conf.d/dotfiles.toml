@@ -6,7 +6,7 @@
 "~/.config/niri" = {}
 "~/.config/noctalia" = {}
 "~/.config/nvim" = {}
-"~/.config/starship.toml" = {}
+"~/.config/starship.toml" = { source = "~/.dotfiles/.config/starship/config.toml" }
 "~/.config/zed" = {}
 "~/.gitconfig" = {}
 "~/.zprofile" = {}
