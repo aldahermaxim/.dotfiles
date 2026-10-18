@@ -2,13 +2,13 @@
 "~/.config/Code/User/settings.json" = { source = "~/.dotfiles/.config/code/config.json" }
 "~/.config/foot" = {}
 "~/.config/ghostty" = {}
+"~/.config/git" = {}
 "~/.config/mise" = {}
 "~/.config/niri" = {}
 "~/.config/noctalia" = {}
 "~/.config/nvim" = {}
 "~/.config/starship.toml" = { source = "~/.dotfiles/.config/starship/config.toml" }
 "~/.config/zed" = {}
-"~/.gitconfig" = {}
 "~/.zprofile" = { source = "~/.dotfiles/.config/zsh/.zprofile" }
 "~/.zshrc" = { source = "~/.dotfiles/.config/zsh/.zshrc" }
 "~/Pictures/Wallpapers" = { source = "~/.dotfiles/wallpapers", mode = "copy" }
