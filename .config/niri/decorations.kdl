@@ -4,8 +4,9 @@ layout {
         width 3
     }
 
-    border {        
-        width 0
+    border {
+        off
+        width 3
     }
 
     shadow {

@@ -3,19 +3,12 @@ position = "top"
 capsule = true
 capsule_radius = 0
 hover_highlight = false
-margin_edge = 10
-margin_ends = 10
+shadow = false
+show_tooltip = false
+margin_edge = 8
+margin_ends = 8
 padding = 4
 radius = 0
-start = ["workspaces", "media"]
-center = ["clock", "weather", "cpu", "ram", "temp"]
-end = [
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "input_volume",
-    "battery",
-]
+start = [ "workspaces" ]
+center = [ "weather", "cpu", "ram", "temp" ]
+end = [ "tray", "notifications", "clipboard", "volume", "input_volume", "network", "bluetooth", "battery", "clock" ]

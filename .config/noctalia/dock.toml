@@ -6,5 +6,5 @@ icon_size = 32
 item_spacing = 10
 magnification_scale = 1.25
 main_axis_padding = 10
-margin_edge = 10
+margin_edge = 8
 radius = 0

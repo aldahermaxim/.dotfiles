@@ -2,6 +2,7 @@
 font_family = "JetBrainsMono Nerd Font Mono"
 niri_overview_type_to_launch_enabled = true
 clipboard_confirm_clear_history = false
+show_close_buttons = false
 corner_radius_scale = 0.0
 polkit_agent = true
 
@@ -9,8 +10,9 @@ polkit_agent = true
 auto_sync = true
 
 [shell.launcher]
+layout = "simple"
+compact = false
 categories = false
-compact = true
 fetch_exchange_rates = false
 
 [shell.launcher.providers.calculator]
@@ -20,7 +22,7 @@ global = false
 show_shortcuts = false
 
 [shell.panel]
-floating_offset = 10
+floating_offset = 8
 floating_layer = "top"
 session_position = "center"
 session_placement = "floating"
