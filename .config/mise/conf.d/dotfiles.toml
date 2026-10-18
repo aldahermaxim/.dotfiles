@@ -9,6 +9,6 @@
 "~/.config/starship.toml" = { source = "~/.dotfiles/.config/starship/config.toml" }
 "~/.config/zed" = {}
 "~/.gitconfig" = {}
-"~/.zprofile" = {}
-"~/.zshrc" = {}
+"~/.zprofile" = { source = "~/.dotfiles/.config/zsh/.zprofile" }
+"~/.zshrc" = { source = "~/.dotfiles/.config/zsh/.zshrc" }
 "~/Pictures/Wallpapers" = { source = "~/.dotfiles/wallpapers", mode = "copy" }
