@@ -1,4 +1,5 @@
 [bar.carbon]
+thickness = 36
 position = "top"
 capsule = true
 capsule_radius = 0
