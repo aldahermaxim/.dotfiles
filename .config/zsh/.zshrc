@@ -64,7 +64,17 @@ alias l='eza -F'
 
 alias vim='nvim'
 alias grep='grep --color=auto'
-alias pixelX='emulator -avd pixelX -memory 6144 -no-window -gpu host -no-audio -no-metrics'
+alias pixelX-stop='adb emu avd snapshot save default_boot && adb emu kill'
+
+
+# ---------------------------------------------------------------------------
+# Functions
+# ---------------------------------------------------------------------------
+
+function pixelX {
+  emulator -avd pixelX -memory 6144 -no-window -gpu host -no-audio -no-metrics "$@" \
+    &>"${TMPDIR:-/tmp}/pixelX.log" &!
+}
 
 
 # ---------------------------------------------------------------------------

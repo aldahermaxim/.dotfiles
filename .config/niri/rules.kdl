@@ -15,7 +15,7 @@ window-rule {
 
 window-rule {
     match app-id="scrcpy"
-    default-column-width { fixed 473; }
+    default-column-width { fixed 487; }
 }
 
 window-rule {
