@@ -1,0 +1,11 @@
+[env]
+ANDROID_HOME = "${XDG_DATA_HOME:-$HOME/.local/share}/android/sdk"
+_.path = [
+  "{{ env.ANDROID_HOME }}/cmdline-tools/latest/bin",
+  "{{ env.ANDROID_HOME }}/platform-tools",
+]
+
+[tasks."android:sdk"]
+description = "Install Android command-line tools and platform tools"
+raw = true
+run = "android sdk install cmdline-tools/latest platform-tools"

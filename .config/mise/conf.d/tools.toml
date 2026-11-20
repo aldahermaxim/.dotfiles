@@ -2,3 +2,4 @@
 node = "lts"
 java = "lts"
 pnpm = "latest"
+android-cli = "latest"
